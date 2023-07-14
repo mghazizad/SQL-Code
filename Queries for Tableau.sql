@@ -1,3 +1,5 @@
+-- I explored the COVID-19 Deaths data file (found here: https://ourworldindata.org/covid-deaths)
+
 -- Table 1-- Global Numbers
 
 SELECT SUM(new_cases) AS total_cases, SUM(new_deaths) AS total_deaths, SUM(new_deaths)/(SUM(new_cases)+0.000001)*100 AS Death_Percentage
