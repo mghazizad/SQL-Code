@@ -1,4 +1,4 @@
--- I explored the COVID-19 Deaths data file (found here: https://ourworldindata.org/covid-deaths)
+-- I explored the COVID-19 Deaths and COVID-19 Vaccinations data files (found here: https://ourworldindata.org/covid-deaths, https://ourworldindata.org/covid-vaccinations)
 
 -- Table 1-- Global Numbers
 
@@ -80,7 +80,7 @@ WHERE location LIKE '%Canada%'
 ORDER BY 1,2
 
 
---Looking at Total Cases vs Population (percentage of population who got Covid)
+--Looking at Total Cases vs Population for Canada
 
 SELECT location, date, total_cases, population, (total_cases/population)*100 AS Percent_of_population_infected
 FROM PortfolioProject..[Covid Deaths]
